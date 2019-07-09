@@ -201,7 +201,7 @@
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;JSON&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -211,7 +211,7 @@
     <div class="toc-wrapper">
       <img src="images/logo.png" class="logo" alt="Logo" />
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
+              <a href="#" data-language-name="JSON">JSON</a>
               <a href="#" data-language-name="ruby">ruby</a>
               <a href="#" data-language-name="python">python</a>
               <a href="#" data-language-name="javascript">javascript</a>
@@ -222,22 +222,127 @@
         <ul class="search-results"></ul>
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+            <a href="#introduction-to-orm-server" class="toc-h1 toc-link" data-title="Introduction to ORM Server">Introduction to ORM Server</a>
           </li>
           <li>
-            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
-          </li>
-          <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
+            <a href="#ac_aisle" class="toc-h1 toc-link" data-title="AC_AISLE">AC_AISLE</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#get-ac_aisles" class="toc-h2 toc-link" data-title="GET | AC_AISLES">GET | AC_AISLES</a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                    <a href="#post-ac_aisles" class="toc-h2 toc-link" data-title="POST | AC_AISLES">POST | AC_AISLES</a>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#get-ac_aisles-count" class="toc-h2 toc-link" data-title="GET | AC_AISLES/count">GET | AC_AISLES/count</a>
+                  </li>
+                  <li>
+                    <a href="#get-ac_aisles-findone" class="toc-h2 toc-link" data-title="GET | AC_AISLES/findOne">GET | AC_AISLES/findOne</a>
+                  </li>
+                  <li>
+                    <a href="#patch-ac_aisles-clearallrackeyes-id" class="toc-h2 toc-link" data-title="PATCH | AC_AISLES/clearAllRackEyes/{id}">PATCH | AC_AISLES/clearAllRackEyes/{id}</a>
+                  </li>
+                  <li>
+                    <a href="#patch-ac_aisles-setresensitivity-id" class="toc-h2 toc-link" data-title="PATCH | AC_AISLES/setReSensitivity/{id}">PATCH | AC_AISLES/setReSensitivity/{id}</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#ac_aisle_management_v" class="toc-h1 toc-link" data-title="AC_AISLE_MANAGEMENT_V">AC_AISLE_MANAGEMENT_V</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-ac_aisle_management_v" class="toc-h2 toc-link" data-title="GET | AC_AISLE_MANAGEMENT_V">GET | AC_AISLE_MANAGEMENT_V</a>
+                  </li>
+                  <li>
+                    <a href="#get-ac_aisle_management_v-customcount" class="toc-h2 toc-link" data-title="GET | AC_AISLE_MANAGEMENT_V/customcount">GET | AC_AISLE_MANAGEMENT_V/customcount</a>
+                  </li>
+                  <li>
+                    <a href="#get-ac_aisle_management_v-findone" class="toc-h2 toc-link" data-title="GET | AC_AISLE_MANAGEMENT_V/findOne">GET | AC_AISLE_MANAGEMENT_V/findOne</a>
+                  </li>
+                  <li>
+                    <a href="#get-ac_aisle_management_v-search" class="toc-h2 toc-link" data-title="GET | AC_AISLE_MANAGEMENT_V/search">GET | AC_AISLE_MANAGEMENT_V/search</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#ac_building" class="toc-h1 toc-link" data-title="AC_BUILDING">AC_BUILDING</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-ac_buildings" class="toc-h2 toc-link" data-title="GET | AC_BUILDINGS">GET | AC_BUILDINGS</a>
+                  </li>
+                  <li>
+                    <a href="#post-ac_buildings" class="toc-h2 toc-link" data-title="POST | AC_BUILDINGS">POST | AC_BUILDINGS</a>
+                  </li>
+                  <li>
+                    <a href="#get-ac_buildings-count" class="toc-h2 toc-link" data-title="GET | AC_BUILDINGS/count">GET | AC_BUILDINGS/count</a>
+                  </li>
+                  <li>
+                    <a href="#get-ac_buildings-findone" class="toc-h2 toc-link" data-title="GET | AC_BUILDINGS/findOne">GET | AC_BUILDINGS/findOne</a>
+                  </li>
+                  <li>
+                    <a href="#patch-ac_buildings-setresensitivity-id" class="toc-h2 toc-link" data-title="PATCH | AC_BUILDINGS/setReSensitivity/{id}">PATCH | AC_BUILDINGS/setReSensitivity/{id}</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#ac_inspection" class="toc-h1 toc-link" data-title="AC_INSPECTION">AC_INSPECTION</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#post-ac_inspection-assign" class="toc-h2 toc-link" data-title="POST | AC_INSPECTION/assign">POST | AC_INSPECTION/assign</a>
+                  </li>
+                  <li>
+                    <a href="#patch-ac_inspection-awaitresolution" class="toc-h2 toc-link" data-title="PATCH | AC_INSPECTION/awaitResolution">PATCH | AC_INSPECTION/awaitResolution</a>
+                  </li>
+                  <li>
+                    <a href="#get-ac_inspection-cleaninspection" class="toc-h2 toc-link" data-title="GET | AC_INSPECTION/cleanInspection">GET | AC_INSPECTION/cleanInspection</a>
+                  </li>
+                  <li>
+                    <a href="#patch-ac_inspection-complete" class="toc-h2 toc-link" data-title="PATCH | AC_INSPECTION/complete">PATCH | AC_INSPECTION/complete</a>
+                  </li>
+                  <li>
+                    <a href="#patch-ac_inspection-completewithnodamage" class="toc-h2 toc-link" data-title="PATCH | AC_INSPECTION/completeWithNoDamage">PATCH | AC_INSPECTION/completeWithNoDamage</a>
+                  </li>
+                  <li>
+                    <a href="#get-ac_inspection-inspectionhistory" class="toc-h2 toc-link" data-title="GET | AC_INSPECTION/inspectionHistory">GET | AC_INSPECTION/inspectionHistory</a>
+                  </li>
+                  <li>
+                    <a href="#get-ac_inspection-inspectionsummary" class="toc-h2 toc-link" data-title="GET | AC_INSPECTION/inspectionSummary">GET | AC_INSPECTION/inspectionSummary</a>
+                  </li>
+                  <li>
+                    <a href="#patch-ac_inspection-reset" class="toc-h2 toc-link" data-title="PATCH | AC_INSPECTION/reset">PATCH | AC_INSPECTION/reset</a>
+                  </li>
+                  <li>
+                    <a href="#patch-ac_inspection-supercede" class="toc-h2 toc-link" data-title="PATCH | AC_INSPECTION/supercede">PATCH | AC_INSPECTION/supercede</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#ac_leg_h" class="toc-h1 toc-link" data-title="AC_LEG_H">AC_LEG_H</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-api-ac_leg_h" class="toc-h2 toc-link" data-title="GET| api/AC_LEG_H">GET| api/AC_LEG_H</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#ret_rackeye" class="toc-h1 toc-link" data-title="RET_RACKEYE">RET_RACKEYE</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-ret_rackeye-getresensitivity" class="toc-h2 toc-link" data-title="GET | RET_RACKEYE/getReSensitivity">GET | RET_RACKEYE/getReSensitivity</a>
+                  </li>
+                  <li>
+                    <a href="#post-ret_rackeye-manageassetevent" class="toc-h2 toc-link" data-title="POST | RET_RACKEYE/manageAssetEvent">POST | RET_RACKEYE/manageAssetEvent</a>
+                  </li>
+                  <li>
+                    <a href="#get-ret_rackeye-resetinspection" class="toc-h2 toc-link" data-title="GET | RET_RACKEYE/resetInspection">GET | RET_RACKEYE/resetInspection</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#gwt_gateway" class="toc-h1 toc-link" data-title="GWT_GATEWAY">GWT_GATEWAY</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#gwt_gateway-requestregistration" class="toc-h2 toc-link" data-title="GWT_GATEWAY/requestRegistration">GWT_GATEWAY/requestRegistration</a>
                   </li>
               </ul>
           </li>
@@ -253,81 +358,254 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+        <h1 id='introduction-to-orm-server'>Introduction to ORM Server</h1>
+<p>The ORM server is built with loopback 3. we documented some examples of how to query the data, but feel free to refer to loopback Docs for more information.<br>
+See <a href="https://loopback.io/doc/en/lb3/">Loopback Documentation</a>.</p>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<!-- > To authorize, use this code:
 
-<p>This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+```ruby
+require 'kittn'
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+api = Kittn::APIClient.authorize!('meowmeowmeow')
+```
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+```python
+import kittn
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-</code></pre>
-<blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
-</blockquote>
+api = kittn.authorize('meowmeowmeow')
+```
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
+```shell
+# With shell, you can just pass the correct header with each request
+curl "api_endpoint_here"
+  -H "Authorization: meowmeowmeow"
+```
 
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+```javascript
+const kittn = require('kittn');
 
-<p><code>Authorization: meowmeowmeow</code></p>
+let api = kittn.authorize('meowmeowmeow');
+```
+
+> Make sure to replace `meowmeowmeow` with your API key.
+
+Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+
+Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+
+`Authorization: meowmeowmeow`
 
 <aside class="notice">
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+# Kittens
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+## Get All Kittens
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
-</code></pre>
+```ruby
+require 'kittn'
+
+api = Kittn::APIClient.authorize!('meowmeowmeow')
+api.kittens.get
+```
+
+```python
+import kittn
+
+api = kittn.authorize('meowmeowmeow')
+api.kittens.get()
+```
+
+```shell
+curl "http://example.com/api/kittens"
+  -H "Authorization: meowmeowmeow"
+```
+
+```javascript
+const kittn = require('kittn');
+
+let api = kittn.authorize('meowmeowmeow');
+let kittens = api.kittens.get();
+```
+
+> The above command returns JSON structured like this:
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Fluffums",
+    "breed": "calico",
+    "fluffiness": 6,
+    "cuteness": 7
+  },
+  {
+    "id": 2,
+    "name": "Max",
+    "breed": "unknown",
+    "fluffiness": 5,
+    "cuteness": 10
+  }
+]
+```
+
+This endpoint retrieves all kittens.
+
+### HTTP Request
+
+`GET http://example.com/api/kittens`
+
+### Query Parameters
+
+Parameter | Default | Description
+--------- | ------- | -----------
+include_cats | false | If set to true, the result will also include cats.
+available | true | If set to false, the result will include kittens that have already been adopted.
+
+<aside class="success">
+Remember — a happy kitten is an authenticated kitten!
+</aside>
+
+## Get a Specific Kitten
+
+```ruby
+require 'kittn'
+
+api = Kittn::APIClient.authorize!('meowmeowmeow')
+api.kittens.get(2)
+```
+
+```python
+import kittn
+
+api = kittn.authorize('meowmeowmeow')
+api.kittens.get(2)
+```
+
+```shell
+curl "http://example.com/api/kittens/2"
+  -H "Authorization: meowmeowmeow"
+```
+
+```javascript
+const kittn = require('kittn');
+
+let api = kittn.authorize('meowmeowmeow');
+let max = api.kittens.get(2);
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "id": 2,
+  "name": "Max",
+  "breed": "unknown",
+  "fluffiness": 5,
+  "cuteness": 10
+}
+```
+
+This endpoint retrieves a specific kitten.
+
+<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+
+### HTTP Request
+
+`GET http://example.com/kittens/<ID>`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+ID | The ID of the kitten to retrieve
+
+## Delete a Specific Kitten
+
+```ruby
+require 'kittn'
+
+api = Kittn::APIClient.authorize!('meowmeowmeow')
+api.kittens.delete(2)
+```
+
+```python
+import kittn
+
+api = kittn.authorize('meowmeowmeow')
+api.kittens.delete(2)
+```
+
+```shell
+curl "http://example.com/api/kittens/2"
+  -X DELETE
+  -H "Authorization: meowmeowmeow"
+```
+
+```javascript
+const kittn = require('kittn');
+
+let api = kittn.authorize('meowmeowmeow');
+let max = api.kittens.delete(2);
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "id": 2,
+  "deleted" : ":("
+}
+```
+
+This endpoint deletes a specific kitten.
+
+### HTTP Request
+
+`DELETE http://example.com/kittens/<ID>`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+ID | The ID of the kitten to delete -->
+<h1 id='ac_aisle'>AC_AISLE</h1><h2 id='get-ac_aisles'>GET | AC_AISLES</h2>
+<p>Returns an array of all the aisles or the aisles that matches the filter param.</p>
+
 <blockquote>
-<p>The above command returns JSON structured like this:</p>
+<p>An example of a query body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"limit"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s2">"where"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"AISLE_ID"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"inq"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">1</span><span class="p">]}},</span><span class="w"> </span><span class="s2">"extract"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"LEGS"</span><span class="p">]}</span><span class="w">
+
+</span></code></pre>
+<blockquote>
+<p>The response body</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="s2">"AISLE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"AISLE_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"LEGS"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"LEG_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"AISLE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"LEG_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"QR_CODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"LEG_COORDINATES"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"LEG_TYPE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"RACKEYE_ENABLED"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"RACKEYE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"ACTION"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
-</span></code></pre>
-<p>This endpoint retrieves all kittens.</p>
-<h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
+</span></code></pre><h3 id='http-request'>HTTP Request</h3>
+<p><code>/api/AC_AISLES?filter={query}</code></p>
+<h3 id='custom-keys-you-can-use-to-query-the-data'>CUSTOM KEYS YOU CAN USE TO QUERY THE DATA</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -336,91 +614,97 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
+<td>IPUI</td>
+<td>none</td>
+<td>Search for aisle by RACKEYE IPUI.</td>
 </tr>
 <tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>LEGS</td>
+<td>none</td>
+<td>Used with EXTRACT to extract all the legs on an aisle (please refer to the params table below).</td>
+</tr>
+</tbody></table>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>limit</td>
+<td>limiting the result to certain number(must not exceed 100 requests).</td>
+</tr>
+<tr>
+<td>where</td>
+<td>filter the result by cirtain condition. syntax: {&quot;where&quot;: {&quot;column_name&quot;: value}}.</td>
+</tr>
+<tr>
+<td>extract [ ]</td>
+<td>extracts legs for each aisle. syntax: {&quot;extract&quot;:[&quot;LEGS&quot;]}.</td>
+</tr>
+<tr>
+<td>inq [ ]</td>
+<td>show result for any values that matches the values in the array . syntax: {&quot;column_name&quot;: {&quot;inq&quot;: [v1, v2, v3]}}.</td>
+</tr>
+<tr>
+<td>neq [ ]</td>
+<td>show result for any values that that does not match the values in the array . syntax: {&quot;column_name&quot;: {&quot;neq&quot;: [v1, v2, v3]}}.</td>
 </tr>
 </tbody></table>
 
 <aside class="success">
 Remember — a happy kitten is an authenticated kitten!
 </aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-<p>This endpoint retrieves a specific kitten.</p>
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<h2 id='post-ac_aisles'>POST | AC_AISLES</h2>
+<p>Post a new aisle and it returns the new aisle object</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters'>URL Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
-</tr>
-</tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<p><code>/api/AC_AISLES</code></p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -X DELETE
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre>
 <blockquote>
-<p>The above command returns JSON structured like this:</p>
+<p>The payload body</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
+    </span><span class="s2">"AISLE_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"CREATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"CREATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre>
-<p>This endpoint deletes a specific kitten.</p>
+</span></code></pre><h2 id='get-ac_aisles-count'>GET | AC_AISLES/count</h2>
+<p>Count instances of the model matched by where from the data source (note you don&#39;t need to use &quot;where&quot; clause in your query body)</p>
 <h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
+<p><code>/api/AC_AISLES/count?where={query}</code></p>
+
+<blockquote>
+<p>An example of a query body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">385</span><span class="p">,</span><span class="w"> </span><span class="s2">"AISLE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">2381</span><span class="p">}</span><span class="w">
+
+</span></code></pre><h2 id='get-ac_aisles-findone'>GET | AC_AISLES/findOne</h2>
+<p>Returns the latest instance or you can use the filter param to return certain instance</p>
+<h3 id='http-request-4'>HTTP Request</h3>
+<p><code>/api/AC_AISLES/findOne?filter={query}</code></p>
+
+<blockquote>
+<p>An example of a query body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"where"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">385</span><span class="p">}}</span><span class="w">
+
+</span></code></pre>
+<blockquote>
+<p>response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"AISLE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">2381</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">384</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"BUILDING_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='patch-ac_aisles-clearallrackeyes-id'>PATCH | AC_AISLES/clearAllRackEyes/{id}</h2>
+<p>Clear all events on the RACKEYE on a giving aisle and clear any notification related to the event.</p>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -428,11 +712,583 @@ Remember — a happy kitten is an authenticated kitten!
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
+<td>id</td>
+<td>the id of the aisle subjected to the adjustment.</td>
 </tr>
 </tbody></table>
-<h1 id='errors'>Errors</h1>
+<h3 id='http-request-example'>HTTP Request Example</h3>
+<p><code>/api/AC_AISLES/clearAllRackEyes/{189}</code>  </p>
+
+<blockquote>
+<p>The payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"USER_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='patch-ac_aisles-setresensitivity-id'>PATCH | AC_AISLES/setReSensitivity/{id}</h2>
+<p>Adjust the warning and alert sensitivity of all the RACKEYE on a giving aisle.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the id of the aisle subjected to the adjustment.</td>
+</tr>
+</tbody></table>
+<h3 id='http-request-example-2'>HTTP Request Example</h3>
+<p><code>/api/AC_AISLES/setReSensitivity/{6}</code>  </p>
+
+<blockquote>
+<p>The payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"ALERT_SENSITIVITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"WARNING_SENSITIVITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='ac_aisle_management_v'>AC_AISLE_MANAGEMENT_V</h1><h2 id='get-ac_aisle_management_v'>GET | AC_AISLE_MANAGEMENT_V</h2>
+<p>Returns an array of all the aisles or the aisles that matches the filter param.</p>
+
+<blockquote>
+<p>An example of a query body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"limit"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s2">"where"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"AISLE_ID"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"inq"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">1</span><span class="p">]}},</span><span class="w"> </span><span class="s2">"extract"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"LEGS"</span><span class="p">]}</span><span class="w">
+
+</span></code></pre>
+<blockquote>
+<p>The response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"COUNTRY_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">235</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ORG_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"SITE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"BUILDING_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">384</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"AISLE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"AISLE_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A1"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"AISLE_LEG_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"AISLE_INCIDENT_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"AISLE_LOW_V_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"AISLE_WARN_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"AISLE_ALERT_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"LEGS"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"LEG_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"AISLE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"LEG_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"QR_CODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"LEG_COORDINATES"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"LEG_TYPE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"RACKEYE_ENABLED"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"RACKEYE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"ACTION"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre><h3 id='http-request'>HTTP Request</h3>
+<p><code>/api/AC_AISLE_MANAGEMENT_V?filter={query}</code></p>
+<h3 id='custom-keys-you-can-use-to-query-the-data'>CUSTOM KEYS YOU CAN USE TO QUERY THE DATA</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>IPUI</td>
+<td>none</td>
+<td>Search for aisle by RACKEYE IPUI.</td>
+</tr>
+<tr>
+<td>LEGS</td>
+<td>none</td>
+<td>Used with EXTRACT to extract all the legs on an aisle (please refer to the params table below).</td>
+</tr>
+</tbody></table>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>limit</td>
+<td>limiting the result to certain number(must not exceed 100 requests).</td>
+</tr>
+<tr>
+<td>where</td>
+<td>filter the result by cirtain condition. syntax: {&quot;where&quot;: {&quot;column_name&quot;: value}}.</td>
+</tr>
+<tr>
+<td>extract [ ]</td>
+<td>extracts legs for each aisle. syntax: {&quot;extract&quot;:[&quot;LEGS&quot;]}.</td>
+</tr>
+<tr>
+<td>inq [ ]</td>
+<td>show result for any values that matches the values in the array . syntax: {&quot;column_name&quot;: {&quot;inq&quot;: [v1, v2, v3]}}.</td>
+</tr>
+<tr>
+<td>neq [ ]</td>
+<td>show result for any values that that does not match the values in the array . syntax: {&quot;column_name&quot;: {&quot;neq&quot;: [v1, v2, v3]}}.</td>
+</tr>
+</tbody></table>
+
+<aside class="success">
+Remember — a happy kitten is an authenticated kitten!
+</aside>
+<h2 id='get-ac_aisle_management_v-customcount'>GET | AC_AISLE_MANAGEMENT_V/customcount</h2>
+<p>Count instances of the model matched by where from the data source (note you don&#39;t need to use &quot;where&quot; clause in your query body)</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>/api/AC_AISLE_MANAGEMENT_V/count?where={query}</code></p>
+
+<blockquote>
+<p>An example of a query body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">385</span><span class="p">,</span><span class="w"> </span><span class="s2">"AISLE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">2381</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<blockquote>
+<p>The response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='get-ac_aisle_management_v-findone'>GET | AC_AISLE_MANAGEMENT_V/findOne</h2>
+<p>Returns the latest instance or you can use the filter param to return certain instance</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>/api/AC_AISLE_MANAGEMENT_V/findOne?filter={query}</code></p>
+
+<blockquote>
+<p>An example of a query body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"where"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">385</span><span class="p">}}</span><span class="w">
+
+</span></code></pre>
+<blockquote>
+<p>response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"COUNTRY_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">235</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"ORG_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"SITE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"BUILDING_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">385</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">2560</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mark's Aisle"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_LEG_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_INCIDENT_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_LOW_V_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_WARN_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_ALERT_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='get-ac_aisle_management_v-search'>GET | AC_AISLE_MANAGEMENT_V/search</h2>
+<p>Returns the latest instance or you can use the filter param to return certain instance</p>
+<h3 id='http-request-4'>HTTP Request</h3>
+<p><code>http://localhost:3019/api/AC_AISLE_MANAGEMENT_V/search?filter={query}</code></p>
+
+<blockquote>
+<p>An example of a query body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"where"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">385</span><span class="p">}}</span><span class="w">
+
+</span></code></pre>
+<blockquote>
+<p>response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"COUNTRY_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">235</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"ORG_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"SITE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"BUILDING_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">385</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">2560</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mark's Aisle"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_LEG_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_INCIDENT_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_LOW_V_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_WARN_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_ALERT_COUNT"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='ac_building'>AC_BUILDING</h1><h2 id='get-ac_buildings'>GET | AC_BUILDINGS</h2>
+<p>Returns an array of all the BUILDINGS or BUILDINGS that matches the filter param.</p>
+
+<blockquote>
+<p>An example of a query body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"limit"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s2">"where"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"BUILDING_ID"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"inq"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">1</span><span class="p">]}}}</span><span class="w">
+
+</span></code></pre>
+<blockquote>
+<p>The response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"BUILDING_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"BUILDING_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"SITE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"BUILDING_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"BUILDING_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"SITE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"BUILDING_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"BUILDING_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"SITE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"any"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre><h3 id='http-request'>HTTP Request</h3>
+<p><code>/api/AC_BUILDINGS?filter={query}</code></p>
+<h3 id='custom-keys-you-can-use-to-query-the-data'>CUSTOM KEYS YOU CAN USE TO QUERY THE DATA</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>IPUI</td>
+<td>none</td>
+<td>Search for BUILDING by RACKEYE IPUI(used in the where param).</td>
+</tr>
+<tr>
+<td>QR_CODE</td>
+<td>none</td>
+<td>Search for BUILDING by leg QR_CODE(used in the where param).</td>
+</tr>
+<tr>
+<td>GSM_SERIAL_ID</td>
+<td>none</td>
+<td>Search for BUILDING by gateway GSM_SERIAL_ID(used in the where param).</td>
+</tr>
+</tbody></table>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>limit</td>
+<td>limiting the result to certain number(must not exceed 100 requests).</td>
+</tr>
+<tr>
+<td>where</td>
+<td>filter the result by certain condition. syntax: {&quot;where&quot;: {&quot;column_name&quot;: value}}.</td>
+</tr>
+<tr>
+<td>inq [ ]</td>
+<td>show result for any values that matches the values in the array . syntax: {&quot;column_name&quot;: {&quot;inq&quot;: [v1, v2, v3]}}.</td>
+</tr>
+<tr>
+<td>neq [ ]</td>
+<td>show result for any values that that does not match the values in the array . syntax: {&quot;column_name&quot;: {&quot;neq&quot;: [v1, v2, v3]}}.</td>
+</tr>
+</tbody></table>
+
+<aside class="success">
+Remember — a happy kitten is an authenticated kitten!
+</aside>
+<h2 id='post-ac_buildings'>POST | AC_BUILDINGS</h2>
+<p>Post a new aisle and it returns the new aisle object</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>/api/AC_BUILDINGS</code></p>
+
+<blockquote>
+<p>The payload body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"AISLE_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"CREATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"CREATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='get-ac_buildings-count'>GET | AC_BUILDINGS/count</h2>
+<p>Count instances of the model matched by where from the data source (note you don&#39;t need to use &quot;where&quot; clause in your query body)</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>/api/AC_BUILDINGS/count?where={query}</code></p>
+
+<blockquote>
+<p>An example of a query body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">385</span><span class="p">,</span><span class="w"> </span><span class="s2">"AISLE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">2381</span><span class="p">}</span><span class="w">
+
+</span></code></pre><h2 id='get-ac_buildings-findone'>GET | AC_BUILDINGS/findOne</h2>
+<p>Returns the latest instance or you can use the filter param to return certain instance</p>
+<h3 id='http-request-4'>HTTP Request</h3>
+<p><code>/api/AC_BUILDINGS/findOne?filter={query}</code></p>
+
+<blockquote>
+<p>An example of a query body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"where"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">385</span><span class="p">}}</span><span class="w">
+
+</span></code></pre>
+<blockquote>
+<p>response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"AISLE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">2381</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"AISLE_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"ZONE_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">384</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"BUILDING_ID"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='patch-ac_buildings-setresensitivity-id'>PATCH | AC_BUILDINGS/setReSensitivity/{id}</h2>
+<p>Adjust the warning and alert sensitivity of all the RACKEYE on a giving AC_BUILDINGS.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the id of the AC_BUILDINGS subjected to the adjustment.</td>
+</tr>
+</tbody></table>
+<h3 id='http-request-example'>HTTP Request Example</h3>
+<p><code>/api/AC_BUILDINGS/setReSensitivity/{123}</code>  </p>
+
+<blockquote>
+<p>The payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"ALERT_SENSITIVITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"WARNING_SENSITIVITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='ac_inspection'>AC_INSPECTION</h1><h2 id='post-ac_inspection-assign'>POST | AC_INSPECTION/assign</h2>
+<p>Assigns user to an existing inspection and creates a new inspection in case when there is no one.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>/api/AC_INSPECTION/assign</code></p>
+
+<blockquote>
+<p>The payload body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"LEG_QR_CODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"USER_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"HAS_DAMAGE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boolean"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"INSPECTION_TYPE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='patch-ac_inspection-awaitresolution'>PATCH | AC_INSPECTION/awaitResolution</h2>
+<p>Set inspection status to awaiting resolution.  </p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>/api/AC_INSPECTION/awaitResolution</code></p>
+
+<blockquote>
+<p>The payload body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"INSPECTION_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='get-ac_inspection-cleaninspection'>GET | AC_INSPECTION/cleanInspection</h2>
+<p>it cleans the inspection if the inspection been interrupted(you don&#39;t have to call this as it runs automatically before submitting inspection).  </p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>/api/AC_INSPECTION/cleanInspection?QR_CODE=qrCode here</code></p>
+<h2 id='patch-ac_inspection-complete'>PATCH | AC_INSPECTION/complete</h2>
+<p>Marks an inspection as complete and deletes the corresponding notification.</p>
+<h3 id='http-request-4'>HTTP Request</h3>
+<p><code>/api/AC_INSPECTION/complete</code></p>
+
+<blockquote>
+<p>The payload body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"INSPECTION_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"QR_CODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"COMPLETED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='patch-ac_inspection-completewithnodamage'>PATCH | AC_INSPECTION/completeWithNoDamage</h2>
+<p>Called when there is no damage to the leg.
+Marks an inspection as complete and set the HAS_DAMAGE to false, or create an inspection if there no one and then completes it. 
+It also deletes the corresponding notification if there is one.</p>
+<h3 id='http-request-5'>HTTP Request</h3>
+<p><code>/api/AC_INSPECTION/completeWithNoDamage</code></p>
+
+<blockquote>
+<p>The payload body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"USER_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"QR_CODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"COMPLETED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='get-ac_inspection-inspectionhistory'>GET | AC_INSPECTION/inspectionHistory</h2>
+<p>Return the historical data of an inspection that has been completed. </p>
+<h3 id='http-request-6'>HTTP Request</h3>
+<p><code>/api/AC_INSPECTION/inspectionHistory?INSPECTION_ID=inspectionId here</code></p>
+<h2 id='get-ac_inspection-inspectionsummary'>GET | AC_INSPECTION/inspectionSummary</h2>
+<p>Return the data of an outstanding inspection that is marked as waiting resolution</p>
+<h3 id='http-request-7'>HTTP Request</h3>
+<p><code>/api/AC_INSPECTION/inspectionSummary?QR_CODE=qe_code here</code></p>
+<h2 id='patch-ac_inspection-reset'>PATCH | AC_INSPECTION/reset</h2>
+<p>reset inspection status to pending and user_id to null.</p>
+
+<blockquote>
+<p>The payload body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"INSPECTION_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='patch-ac_inspection-supercede'>PATCH | AC_INSPECTION/supercede</h2>
+<p>supercede an inspection and sets completed_date.</p>
+
+<blockquote>
+<p>The payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"INSPECTION_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='ac_leg_h'>AC_LEG_H</h1><h2 id='get-api-ac_leg_h'>GET| api/AC_LEG_H</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>target</td>
+<td>(string) available targets are INTERNAL and REPORT by default the endpoint returns the UI and All levels.</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>query example  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"target"</span><span class="p">:</span><span class="w"> </span><span class="s2">"REPORT"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='http-request-example'>HTTP Request Example</h3>
+<p><code>/api/RET_RACKEYE/getReSensitivityIPUI=&#39;IPUI HERE&#39;</code>  </p>
+<h1 id='ret_rackeye'>RET_RACKEYE</h1><h2 id='get-ret_rackeye-getresensitivity'>GET | RET_RACKEYE/getReSensitivity</h2>
+<p>Get rackeye warning and alert sensitivity.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>IPUI</td>
+<td>(string) the IPUI for the requested rackeye.</td>
+</tr>
+</tbody></table>
+<h3 id='http-request-example'>HTTP Request Example</h3>
+<p><code>/api/RET_RACKEYE/getReSensitivityIPUI=&#39;IPUI HERE&#39;</code>  </p>
+
+<blockquote>
+<p>Response body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"ALERT_SENSITIVITY"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"WARNING_SENSITIVITY"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='post-ret_rackeye-manageassetevent'>POST | RET_RACKEYE/manageAssetEvent</h2>
+<p>THIS ENDPOINT BEHAVES DIFFERENTLY DEPENDING ON EACH CASE BELOW:  </p>
+
+<p>Case Low Battery<br>
+1-it creates a new notification
+2-add a record to leg history</p>
+
+<p>Case Battery Replaced<br>
+1-remove the related notification
+2-add a record to leg history</p>
+
+<p>Case Warning<br>
+1-creates an inspection if there is no one<br>
+2-it creates a new notification
+3-add a record to leg history</p>
+
+<p>Case Alert<br>
+1-creates an inspection if there is no one 2-it creates a new notification
+3-add a record to leg history</p>
+
+<p>Case Offline<br>
+1-it creates a new notification
+2-add a record to leg history</p>
+
+<p>Case Online<br>
+1-remove the related notification
+2-add a record to leg history</p>
+<h3 id='http-request-example-2'>HTTP Request Example</h3>
+<p><code>/api/RET_RACKEYE/manageAssetEvent</code>  </p>
+
+<blockquote>
+<p>Response body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="s2">"IPUI"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"CREATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"CREATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="s2">"date"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"ASSET_EVENT_NOTIF_TYPE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"AS_EVT_NOTIF_TYPE_CAUSE_ID"</span><span class="p">:</span><span class="s2">"number"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='get-ret_rackeye-resetinspection'>GET | RET_RACKEYE/resetInspection</h2>
+<p>Set rackeye event status to no event.</p>
+<h3 id='http-request-example-3'>HTTP Request Example</h3>
+<p><code>/api/RET_RACKEYE/resetInspection</code>  </p>
+
+<blockquote>
+<p>Payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"QR_CODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='gwt_gateway'>GWT_GATEWAY</h1><h2 id='gwt_gateway-requestregistration'>GWT_GATEWAY/requestRegistration</h2>
+<p>CHECKS IF THERE IS ANY GATEWAY OPEN ON A SITE<br>
+Case true:<br>
+returns a message indicating that there is a gateway already open and status code 403</p>
+
+<p>Case false:<br>
+opens the gateway and return status code 200</p>
+<h3 id='http-request-example'>HTTP Request Example</h3>
+<p><code>/api/GWT_GATEWAY/requestRegistration</code>  </p>
+
+<blockquote>
+<p>Payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"GSM_SERIAL_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
 </aside>
@@ -494,7 +1350,7 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
+                <a href="#" data-language-name="JSON">JSON</a>
                 <a href="#" data-language-name="ruby">ruby</a>
                 <a href="#" data-language-name="python">python</a>
                 <a href="#" data-language-name="javascript">javascript</a>
