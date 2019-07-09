@@ -14,4 +14,4 @@ target | (string) available targets are INTERNAL and REPORT by default the endpo
 }
 ```
 ### HTTP Request Example
-`/api/RET_RACKEYE/getReSensitivityIPUI='IPUI HERE'`  
+`/api/AC_LEG_H/`  
