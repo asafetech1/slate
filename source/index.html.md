@@ -2,7 +2,7 @@
 title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
+  - JSON
   - ruby
   - python
   - javascript
@@ -12,22 +12,38 @@ toc_footers:
   - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
 
 includes:
+  - AC_AISLES
+  - AC_AISLE_MANAGEMENT_V
+  - AC_BUILDING
+  - AC_INSPECTION
+  - AC_INSPECTION_BODY
+  - AC_INSPECTION_MEDIA
+  - AC_INSPECTION_RESOLUTION
+  - AC_INSPECTION_RESPONSE
+  - AC_LEG_H
+  - AC_ORG_BUILDING_MAP_VW
+  - AC_ORGANISATION
+  - AC_ORGANISATION_LEG_MAP_VW
+  - AC_ORGANISATION_SITE_MAP_VW
+  - AC_ZONE
+  - AC_ZONE_MANAGEMENT_VIEW_V
+  - AST_GLOBAL_USER_SEC_POLICY
+  - RET_RACKEYE 
+  - GWT_GATEWAY
   - errors
 
 search: true
 ---
 
-# Introduction
+# Introduction to ORM Server
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+The ORM server is built with loopback 3. we documented some examples of how to query the data, but feel free to refer to loopback Docs for more information.  
+See [Loopback Documentation](https://loopback.io/doc/en/lb3/).
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
-# Authentication
 
-> To authorize, use this code:
+<!-- > To authorize, use this code:
 
 ```ruby
 require 'kittn'
@@ -235,5 +251,5 @@ This endpoint deletes a specific kitten.
 
 Parameter | Description
 --------- | -----------
-ID | The ID of the kitten to delete
+ID | The ID of the kitten to delete -->
 
