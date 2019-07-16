@@ -16,6 +16,7 @@ Post a new Organisation and it returns the new Organisation object
   "CURRENCY_ID": "number",
   "CUSTOMER_ID": "number",
   "LANGUAGE_ID": "number",
+  "ORG_LOGO": "buffer",
   "APPLICATION_SKIN_ID": "number",
   "UPDATED_BY": "string",
   "UPDATED_DATE": "date"
