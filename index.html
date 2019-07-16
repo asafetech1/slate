@@ -322,6 +322,9 @@
                   <li>
                     <a href="#get-api-ac_leg_h" class="toc-h2 toc-link" data-title="GET| api/AC_LEG_H">GET| api/AC_LEG_H</a>
                   </li>
+                  <li>
+                    <a href="#post-ac_organisations" class="toc-h2 toc-link" data-title="POST | AC_ORGANISATIONS">POST | AC_ORGANISATIONS</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -1191,7 +1194,26 @@ It also deletes the corresponding notification if there is one.</p>
 </span><span class="p">}</span><span class="w">
 </span></code></pre><h3 id='http-request-example'>HTTP Request Example</h3>
 <p><code>/api/AC_LEG_H/</code>  </p>
-<h1 id='ret_rackeye'>RET_RACKEYE</h1><h2 id='get-ret_rackeye-getresensitivity'>GET | RET_RACKEYE/getReSensitivity</h2>
+<h2 id='post-ac_organisations'>POST | AC_ORGANISATIONS</h2>
+<p>Post a new Organisation and it returns the new Organisation object</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>/api/AC_ORGANISATIONS</code></p>
+
+<blockquote>
+<p>The payload body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"ORG_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"COUNTRY_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"ORG_NAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"CURRENCY_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"CUSTOMER_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"LANGUAGE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"APPLICATION_SKIN_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='ret_rackeye'>RET_RACKEYE</h1><h2 id='get-ret_rackeye-getresensitivity'>GET | RET_RACKEYE/getReSensitivity</h2>
 <p>Get rackeye warning and alert sensitivity.</p>
 
 <table><thead>
