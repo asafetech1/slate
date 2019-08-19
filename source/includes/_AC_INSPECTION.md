@@ -118,3 +118,63 @@ supercede an inspection and sets completed_date.
     "INSPECTION_ID": "number"
 }
 ```
+
+## POST | AC_INSPECTIONS/submitInspection
+Submit the inspection and return an object of risk outcome and media payload array.
+
+> Payload body  
+
+```json
+{
+    "json": [],
+    "USERNAME": "string",
+    "QR_CODE": "string",
+    "DATE": "date string"
+}
+```
+
+> Response body  
+
+```json
+{
+  "MEDIA": [
+    {
+      "INSPECTION_RESPONSE_ID": "number",
+      "INSPECTION_MEDIA": "buffer",
+      "CREATED_BY": "string",
+      "CREATED_DATE": "date string",
+      "UPDATED_BY": "string",
+      "UPDATED_DATE": "date string"
+    }
+  ],
+  "RISK": {
+    "OUTCOME": "MAINTENANCE REQUIRED | MINOR DAMAGE | NO DAMAGE",
+    "INSPECTION_RISK_LEVEL_ID": "number"
+  }
+}
+```
+
+## POST | AC_INSPECTIONS/submitInspectionMedia
+Submit the inspection media and returns "successful" string and 200 statusCode.
+
+> Payload body  
+
+```json
+{
+  "MEDIA": [
+    {
+      "INSPECTION_RESPONSE_ID": "number",
+      "INSPECTION_MEDIA": "buffer",
+      "CREATED_BY": "string",
+      "CREATED_DATE": "date string",
+      "UPDATED_BY": "string",
+      "UPDATED_DATE": "date string"
+    }
+  ]
+}
+```
+
+> Response body  
+```json
+"successful"
+```
