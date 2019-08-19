@@ -314,6 +314,12 @@
                   <li>
                     <a href="#patch-ac_inspection-supercede" class="toc-h2 toc-link" data-title="PATCH | AC_INSPECTION/supercede">PATCH | AC_INSPECTION/supercede</a>
                   </li>
+                  <li>
+                    <a href="#post-ac_inspections-submitinspection" class="toc-h2 toc-link" data-title="POST | AC_INSPECTIONS/submitInspection">POST | AC_INSPECTIONS/submitInspection</a>
+                  </li>
+                  <li>
+                    <a href="#post-ac_inspections-submitinspectionmedia" class="toc-h2 toc-link" data-title="POST | AC_INSPECTIONS/submitInspectionMedia">POST | AC_INSPECTIONS/submitInspectionMedia</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -1181,7 +1187,64 @@ It also deletes the corresponding notification if there is one.</p>
     </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"INSPECTION_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h1 id='ac_leg_h'>AC_LEG_H</h1><h2 id='get-api-ac_leg_h'>GET| api/AC_LEG_H</h2>
+</span></code></pre><h2 id='post-ac_inspections-submitinspection'>POST | AC_INSPECTIONS/submitInspection</h2>
+<p>Submit the inspection and return an object of risk outcome and media payload array.</p>
+
+<blockquote>
+<p>Payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"json"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="s2">"USERNAME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"QR_CODE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date string"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Response body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"MEDIA"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"INSPECTION_RESPONSE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"INSPECTION_MEDIA"</span><span class="p">:</span><span class="w"> </span><span class="s2">"buffer"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"CREATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"CREATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"RISK"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"OUTCOME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MAINTENANCE REQUIRED | MINOR DAMAGE | NO DAMAGE"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"INSPECTION_RISK_LEVEL_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='post-ac_inspections-submitinspectionmedia'>POST | AC_INSPECTIONS/submitInspectionMedia</h2>
+<p>Submit the inspection media and returns &quot;successful&quot; string and 200 statusCode.</p>
+
+<blockquote>
+<p>Payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"MEDIA"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"INSPECTION_RESPONSE_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"INSPECTION_MEDIA"</span><span class="p">:</span><span class="w"> </span><span class="s2">"buffer"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"CREATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"CREATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Response body<br>
+<code>json
+&quot;successful&quot;
+</code></p>
+</blockquote>
+<h1 id='ac_leg_h'>AC_LEG_H</h1><h2 id='get-api-ac_leg_h'>GET| api/AC_LEG_H</h2>
 <table><thead>
 <tr>
 <th>Parameter</th>
