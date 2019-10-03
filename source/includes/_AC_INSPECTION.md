@@ -140,7 +140,7 @@ Submit the inspection and return an object of risk outcome and media payload arr
   "MEDIA": [
     {
       "INSPECTION_RESPONSE_ID": "number",
-      "INSPECTION_MEDIA": "buffer",
+      "INSPECTION_MEDIA": "Image name",
       "CREATED_BY": "string",
       "CREATED_DATE": "date string",
       "UPDATED_BY": "string",
