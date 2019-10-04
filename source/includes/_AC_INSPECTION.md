@@ -166,8 +166,7 @@ Submit the inspection media and returns "successful" string and 200 statusCode.
 > Payload body  
 
 ```json
-{
-  "MEDIA": [
+[
     {
       "INSPECTION_RESPONSE_ID": "number",
       "INSPECTION_MEDIA": "buffer",
@@ -176,8 +175,7 @@ Submit the inspection media and returns "successful" string and 200 statusCode.
       "UPDATED_BY": "string",
       "UPDATED_DATE": "date string"
     }
-  ]
-}
+]
 ```
 
 > Response body  
