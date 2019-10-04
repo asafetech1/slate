@@ -1,5 +1,4 @@
-# AC_BUILDING  
-
+# AC_BUILDING
 ## GET | AC_BUILDINGS
 Returns an array of all the BUILDINGS or BUILDINGS that matches the filter param.
 
