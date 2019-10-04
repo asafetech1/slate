@@ -355,6 +355,25 @@
               </ul>
           </li>
           <li>
+            <a href="#ac_leg" class="toc-h1 toc-link" data-title="AC_LEG">AC_LEG</a>
+          </li>
+          <li>
+            <a href="#patch-ac_legs-activaterackeye-qr_code" class="toc-h1 toc-link" data-title="PATCH | AC_LEGS/activateRackeye/{QR_CODE}">PATCH | AC_LEGS/activateRackeye/{QR_CODE}</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-example" class="toc-h2 toc-link" data-title="HTTP Request Example">HTTP Request Example</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#patch-ac_legs-deactivaterackeye-qr_code" class="toc-h1 toc-link" data-title="PATCH | AC_LEGS/deactivateRackeye/{QR_CODE}">PATCH | AC_LEGS/deactivateRackeye/{QR_CODE}</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-example-2" class="toc-h2 toc-link" data-title="HTTP Request Example">HTTP Request Example</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#ac_leg_h" class="toc-h1 toc-link" data-title="AC_LEG_H">AC_LEG_H</a>
               <ul class="toc-list-h2">
                   <li>
@@ -1395,7 +1414,55 @@ else:<br>
 &quot;successful&quot;
 </code></p>
 </blockquote>
-<h1 id='ac_leg_h'>AC_LEG_H</h1><h2 id='get-api-ac_leg_h'>GET| api/AC_LEG_H</h2>
+<h1 id='ac_leg'>AC_LEG</h1><h1 id='patch-ac_legs-activaterackeye-qr_code'>PATCH | AC_LEGS/activateRackeye/{QR_CODE}</h1>
+<p>Activate Rackeye in a given zone.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>QR_CODE</td>
+<td>the QR_CODE of the leg subjected to the adjustment.</td>
+</tr>
+</tbody></table>
+<h3 id='http-request-example'>HTTP Request Example</h3>
+<p><code>/api/AC_LEGS/activateRackeye/{189}</code>  </p>
+
+<blockquote>
+<p>The payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='patch-ac_legs-deactivaterackeye-qr_code'>PATCH | AC_LEGS/deactivateRackeye/{QR_CODE}</h1>
+<p>deactivate Rackeye in a given zone.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>QR_CODE</td>
+<td>the QR_CODE of the leg subjected to the adjustment.</td>
+</tr>
+</tbody></table>
+<h3 id='http-request-example-2'>HTTP Request Example</h3>
+<p><code>/api/AC_LEGS/deactivateRackeye/{189}</code>  </p>
+
+<blockquote>
+<p>The payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='ac_leg_h'>AC_LEG_H</h1><h2 id='get-api-ac_leg_h'>GET| api/AC_LEG_H</h2>
 <table><thead>
 <tr>
 <th>Parameter</th>
