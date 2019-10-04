@@ -38,7 +38,7 @@ Returns an array of all the BUILDINGS or BUILDINGS that matches the filter param
 Parameter | Default | Description
 --------- | ------- | -----------
 IPUI | none | Search for BUILDING by RACKEYE IPUI(used in the where param).
-QR_CODE | none | Search for BUILDING by leg QR_CODE(used in the where param).
+QR_CODE | none | Search for BUILDING by building QR_CODE(used in the where param).
 GSM_SERIAL_ID | none | Search for BUILDING by gateway GSM_SERIAL_ID(used in the where param).
 
 ### Query Parameters
@@ -129,6 +129,43 @@ id | the id of the AC_BUILDINGS subjected to the adjustment.
 {
     "ALERT_SENSITIVITY": "number",
     "WARNING_SENSITIVITY": "number",
+    "UPDATED_BY": "string",
+    "UPDATED_DATE": "DATE(dd,mm,yy hh:mm:ss)"
+}
+```
+
+# PATCH | AC_BUILDINGS/activateRackeye/{id}
+Activate Rackeye in a given zone.
+
+Parameter | Description
+--------- | -----------
+id | the id of the building subjected to the adjustment.
+
+ 
+### HTTP Request Example
+`/api/AC_BUILDINGS/activateRackeye/{189}`  
+> The payload body  
+
+```json
+{
+    "UPDATED_BY": "string",
+    "UPDATED_DATE": "DATE(dd,mm,yy hh:mm:ss)"
+}
+```
+# PATCH | AC_BUILDINGS/deactivateRackeye/{id}
+deactivate Rackeye in a given zone.
+
+Parameter | Description
+--------- | -----------
+id | the id of the building subjected to the adjustment.
+
+ 
+### HTTP Request Example
+`/api/AC_BUILDINGS/deactivateRackeye/{189}`  
+> The payload body  
+
+```json
+{
     "UPDATED_BY": "string",
     "UPDATED_DATE": "DATE(dd,mm,yy hh:mm:ss)"
 }

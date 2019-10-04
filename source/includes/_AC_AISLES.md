@@ -154,3 +154,40 @@ id | the id of the aisle subjected to the adjustment.
     "UPDATED_DATE": "DATE(dd,mm,yy hh:mm:ss)"
 }
 ```
+
+# PATCH | AC_AISLES/activateRackeye/{id}
+Activate Rackeye in a given aisle.
+
+Parameter | Description
+--------- | -----------
+id | the id of the aisle subjected to the adjustment.
+
+ 
+### HTTP Request Example
+`/api/AC_AISLES/activateRackeye/{189}`  
+> The payload body  
+
+```json
+{
+    "UPDATED_BY": "string",
+    "UPDATED_DATE": "DATE(dd,mm,yy hh:mm:ss)"
+}
+```
+# PATCH | AC_AISLES/deactivateRackeye/{id}
+deactivate Rackeye in a given aisle.
+
+Parameter | Description
+--------- | -----------
+id | the id of the aisle subjected to the adjustment.
+
+ 
+### HTTP Request Example
+`/api/AC_AISLES/deactivateRackeye/{189}`  
+> The payload body  
+
+```json
+{
+    "UPDATED_BY": "string",
+    "UPDATED_DATE": "DATE(dd,mm,yy hh:mm:ss)"
+}
+```
