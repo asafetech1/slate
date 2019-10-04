@@ -123,7 +123,7 @@ supercede an inspection and sets completed_date.
 Submit the inspection and return an object of risk outcome and media payload array.
 
 If the media payload array empty:   
-    Skip calling AC_INSPECTIONS/submitInspectionMedia   
+    You can skip calling AC_INSPECTIONS/submitInspectionMedia   
 else:    
     Before passing the media payload array to AC_INSPECTIONS/submitInspectionMedia you   
     need to map over the array and replace the image name with the image buffer.
