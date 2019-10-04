@@ -248,6 +248,22 @@
               </ul>
           </li>
           <li>
+            <a href="#patch-ac_aisles-activaterackeye-id" class="toc-h1 toc-link" data-title="PATCH | AC_AISLES/activateRackeye/{id}">PATCH | AC_AISLES/activateRackeye/{id}</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-example-3" class="toc-h2 toc-link" data-title="HTTP Request Example">HTTP Request Example</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#patch-ac_aisles-deactivaterackeye-id" class="toc-h1 toc-link" data-title="PATCH | AC_AISLES/deactivateRackeye/{id}">PATCH | AC_AISLES/deactivateRackeye/{id}</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-example-4" class="toc-h2 toc-link" data-title="HTTP Request Example">HTTP Request Example</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#ac_aisle_management_v" class="toc-h1 toc-link" data-title="AC_AISLE_MANAGEMENT_V">AC_AISLE_MANAGEMENT_V</a>
               <ul class="toc-list-h2">
                   <li>
@@ -281,6 +297,22 @@
                   </li>
                   <li>
                     <a href="#patch-ac_buildings-setresensitivity-id" class="toc-h2 toc-link" data-title="PATCH | AC_BUILDINGS/setReSensitivity/{id}">PATCH | AC_BUILDINGS/setReSensitivity/{id}</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#patch-ac_buildings-activaterackeye-id" class="toc-h1 toc-link" data-title="PATCH | AC_BUILDINGS/activateRackeye/{id}">PATCH | AC_BUILDINGS/activateRackeye/{id}</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-example-2" class="toc-h2 toc-link" data-title="HTTP Request Example">HTTP Request Example</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#patch-ac_buildings-deactivaterackeye-id" class="toc-h1 toc-link" data-title="PATCH | AC_BUILDINGS/deactivateRackeye/{id}">PATCH | AC_BUILDINGS/deactivateRackeye/{id}</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-example-3" class="toc-h2 toc-link" data-title="HTTP Request Example">HTTP Request Example</a>
                   </li>
               </ul>
           </li>
@@ -338,6 +370,22 @@
                   </li>
                   <li>
                     <a href="#patch-ac_organisations" class="toc-h2 toc-link" data-title="PATCH | AC_ORGANISATIONS">PATCH | AC_ORGANISATIONS</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#patch-ac_zones-activaterackeye-id" class="toc-h1 toc-link" data-title="PATCH | AC_ZONES/activateRackeye/{id}">PATCH | AC_ZONES/activateRackeye/{id}</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-example" class="toc-h2 toc-link" data-title="HTTP Request Example">HTTP Request Example</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#patch-ac_zones-deactivaterackeye-id" class="toc-h1 toc-link" data-title="PATCH | AC_ZONES/deactivateRackeye/{id}">PATCH | AC_ZONES/deactivateRackeye/{id}</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-example-2" class="toc-h2 toc-link" data-title="HTTP Request Example">HTTP Request Example</a>
                   </li>
               </ul>
           </li>
@@ -770,6 +818,54 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
 </span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='patch-ac_aisles-activaterackeye-id'>PATCH | AC_AISLES/activateRackeye/{id}</h1>
+<p>Activate Rackeye in a given aisle.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the id of the aisle subjected to the adjustment.</td>
+</tr>
+</tbody></table>
+<h3 id='http-request-example-3'>HTTP Request Example</h3>
+<p><code>/api/AC_AISLES/activateRackeye/{189}</code>  </p>
+
+<blockquote>
+<p>The payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='patch-ac_aisles-deactivaterackeye-id'>PATCH | AC_AISLES/deactivateRackeye/{id}</h1>
+<p>deactivate Rackeye in a given aisle.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the id of the aisle subjected to the adjustment.</td>
+</tr>
+</tbody></table>
+<h3 id='http-request-example-4'>HTTP Request Example</h3>
+<p><code>/api/AC_AISLES/deactivateRackeye/{189}</code>  </p>
+
+<blockquote>
+<p>The payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre><h1 id='ac_aisle_management_v'>AC_AISLE_MANAGEMENT_V</h1><h2 id='get-ac_aisle_management_v'>GET | AC_AISLE_MANAGEMENT_V</h2>
 <p>Returns an array of all the aisles or the aisles that matches the filter param.</p>
 
@@ -984,7 +1080,7 @@ Remember — a happy kitten is an authenticated kitten!
 <tr>
 <td>QR_CODE</td>
 <td>none</td>
-<td>Search for BUILDING by leg QR_CODE(used in the where param).</td>
+<td>Search for BUILDING by building QR_CODE(used in the where param).</td>
 </tr>
 <tr>
 <td>GSM_SERIAL_ID</td>
@@ -1089,6 +1185,54 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="s2">"ALERT_SENSITIVITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"WARNING_SENSITIVITY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='patch-ac_buildings-activaterackeye-id'>PATCH | AC_BUILDINGS/activateRackeye/{id}</h1>
+<p>Activate Rackeye in a given zone.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the id of the building subjected to the adjustment.</td>
+</tr>
+</tbody></table>
+<h3 id='http-request-example-2'>HTTP Request Example</h3>
+<p><code>/api/AC_BUILDINGS/activateRackeye/{189}</code>  </p>
+
+<blockquote>
+<p>The payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='patch-ac_buildings-deactivaterackeye-id'>PATCH | AC_BUILDINGS/deactivateRackeye/{id}</h1>
+<p>deactivate Rackeye in a given zone.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the id of the building subjected to the adjustment.</td>
+</tr>
+</tbody></table>
+<h3 id='http-request-example-3'>HTTP Request Example</h3>
+<p><code>/api/AC_BUILDINGS/deactivateRackeye/{189}</code>  </p>
+
+<blockquote>
+<p>The payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -1331,6 +1475,54 @@ else:<br>
   </span><span class="s2">"APPLICATION_SKIN_ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='patch-ac_zones-activaterackeye-id'>PATCH | AC_ZONES/activateRackeye/{id}</h1>
+<p>Activate Rackeye in a given zone.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the id of the zone subjected to the adjustment.</td>
+</tr>
+</tbody></table>
+<h3 id='http-request-example'>HTTP Request Example</h3>
+<p><code>/api/AC_ZONES/activateRackeye/{189}</code>  </p>
+
+<blockquote>
+<p>The payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h1 id='patch-ac_zones-deactivaterackeye-id'>PATCH | AC_ZONES/deactivateRackeye/{id}</h1>
+<p>deactivate Rackeye in a given zone.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>the id of the zone subjected to the adjustment.</td>
+</tr>
+</tbody></table>
+<h3 id='http-request-example-2'>HTTP Request Example</h3>
+<p><code>/api/AC_ZONES/deactivateRackeye/{189}</code>  </p>
+
+<blockquote>
+<p>The payload body  </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"UPDATED_BY"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"UPDATED_DATE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DATE(dd,mm,yy hh:mm:ss)"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre><h1 id='ret_rackeye'>RET_RACKEYE</h1><h2 id='get-ret_rackeye-getresensitivity'>GET | RET_RACKEYE/getReSensitivity</h2>
 <p>Get rackeye warning and alert sensitivity.</p>
