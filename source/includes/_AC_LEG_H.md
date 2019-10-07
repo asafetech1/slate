@@ -1,5 +1,4 @@
 # AC_LEG_H
-
 ## GET| api/AC_LEG_H
 
 Parameter | Description

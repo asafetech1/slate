@@ -1,10 +1,10 @@
 # AC_LEG
-# PATCH | AC_LEGS/activateRackeye/{QR_CODE}
+## PATCH | AC_LEGS/activateRackeye/{id}
 Activate Rackeye in a given zone.
 
 Parameter | Description
 --------- | -----------
-QR_CODE | the QR_CODE of the leg subjected to the adjustment.
+id | the id of the leg subjected to the adjustment.
 
  
 ### HTTP Request Example
@@ -17,12 +17,12 @@ QR_CODE | the QR_CODE of the leg subjected to the adjustment.
     "UPDATED_DATE": "DATE(dd,mm,yy hh:mm:ss)"
 }
 ```
-# PATCH | AC_LEGS/deactivateRackeye/{QR_CODE}
+## PATCH | AC_LEGS/deactivateRackeye/{id}
 deactivate Rackeye in a given zone.
 
 Parameter | Description
 --------- | -----------
-QR_CODE | the QR_CODE of the leg subjected to the adjustment.
+id | the id of the leg subjected to the adjustment.
 
  
 ### HTTP Request Example

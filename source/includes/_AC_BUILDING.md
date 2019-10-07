@@ -1,4 +1,5 @@
-# AC_BUILDING
+# AC_BUILDING  
+
 ## GET | AC_BUILDINGS
 Returns an array of all the BUILDINGS or BUILDINGS that matches the filter param.
 
@@ -134,7 +135,7 @@ id | the id of the AC_BUILDINGS subjected to the adjustment.
 }
 ```
 
-# PATCH | AC_BUILDINGS/activateRackeye/{id}
+## PATCH | AC_BUILDINGS/activateRackeye/{id}
 Activate Rackeye in a given zone.
 
 Parameter | Description
@@ -152,7 +153,7 @@ id | the id of the building subjected to the adjustment.
     "UPDATED_DATE": "DATE(dd,mm,yy hh:mm:ss)"
 }
 ```
-# PATCH | AC_BUILDINGS/deactivateRackeye/{id}
+## PATCH | AC_BUILDINGS/deactivateRackeye/{id}
 deactivate Rackeye in a given zone.
 
 Parameter | Description

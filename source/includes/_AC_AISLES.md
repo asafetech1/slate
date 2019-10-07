@@ -155,7 +155,7 @@ id | the id of the aisle subjected to the adjustment.
 }
 ```
 
-# PATCH | AC_AISLES/activateRackeye/{id}
+## PATCH | AC_AISLES/activateRackeye/{id}
 Activate Rackeye in a given aisle.
 
 Parameter | Description
@@ -173,7 +173,7 @@ id | the id of the aisle subjected to the adjustment.
     "UPDATED_DATE": "DATE(dd,mm,yy hh:mm:ss)"
 }
 ```
-# PATCH | AC_AISLES/deactivateRackeye/{id}
+## PATCH | AC_AISLES/deactivateRackeye/{id}
 deactivate Rackeye in a given aisle.
 
 Parameter | Description
